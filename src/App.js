@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { Background, ContainerTask, TitleTask, ContentTask } from "./styles/stylesGeral";
+import Tasklist from "./components/TaskList/TaskList";
+import TaskInput from "./components/InputTask/Input";
+import { TaskContext } from "./components/context/context";
+import { FilterTask } from "./Filter/Filter";
 
 function App() {
+
+  const { task } = useContext(TaskContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Background> {/*Componente de fundo envolve todo o conteúdo*/}
+      <ContainerTask> {/*Container principal*/}
+        <ContentTask lengthTasklist={task.length}> {/*Container para o conteudo*/}
+          <TitleTask> Lista de tarefas </TitleTask>{/* Titulo*/}
+          <TaskInput /> {/*Componente responsavel pelo entrada dos dados da tarefas*/}
+          {task.length === 0 ? null : (<FilterTask />)}{/* Exibe o componente de filtro somente se houver tarefas*/}
+          <Tasklist /> {/*Componente responsavel pelo input*/}
+        </ContentTask>
+      </ContainerTask>
+    </Background>
   );
 }
 
