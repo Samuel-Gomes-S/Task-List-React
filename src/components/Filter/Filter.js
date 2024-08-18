@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react"
-import { ContainerFilter, FilterButton } from "../styles/stylesFilter"
-import { TaskContext } from "../components/context/context"
+import React, { useContext } from "react"
+import { ContainerFilter, FilterButton } from "../../styles/stylesFilter"
+import { TaskContext } from "../context/context"
 
 
 export function FilterTask() {

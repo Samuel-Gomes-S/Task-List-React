@@ -3,7 +3,7 @@ import { Background, ContainerTask, TitleTask, ContentTask } from "./styles/styl
 import Tasklist from "./components/TaskList/TaskList";
 import TaskInput from "./components/InputTask/Input";
 import { TaskContext } from "./components/context/context";
-import { FilterTask } from "./Filter/Filter";
+import { FilterTask } from "./components/Filter/Filter";
 
 function App() {
 
