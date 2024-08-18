@@ -47,7 +47,7 @@ export default function TaskProvider({ children }) {
         }
         setTask([...task, newTask]);
         setTaskText('');
-    }
+    } 
 
     // Função para a remoção das tarefas
     function handleRemoveTask(id) {

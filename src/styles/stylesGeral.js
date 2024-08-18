@@ -12,7 +12,7 @@ const Background = styled.div`
 const ContainerTask = styled.div`
     margin: auto;
     overflow: hidden;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     width: 60vw;
     border-radius: 25px 25px 8px 8px;

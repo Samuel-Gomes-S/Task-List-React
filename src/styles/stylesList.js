@@ -11,7 +11,7 @@ const ContainerList = styled.div`
     margin: 7.5px 15px 7.5px 15px;
     padding: 15px;
     border-radius: 8px;
-    max-height: 500px;
+    max-height: 500px; 
     overflow: hidden;
 `;
 

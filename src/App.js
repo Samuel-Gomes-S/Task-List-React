@@ -19,7 +19,7 @@ function App() {
           <Tasklist /> {/*Componente responsavel pelo input*/}
         </ContentTask>
       </ContainerTask>
-    </Background>
+    </Background> 
   );
 }
 

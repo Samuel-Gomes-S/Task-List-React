@@ -22,7 +22,7 @@ export default function TaskInput() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 > {/*Botão para registrar a tarefa*/}
-                    Registrar
+                    Registrar 
                 </SubmitButton>
             </ContentInput>
         </AreaInput>

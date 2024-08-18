@@ -17,7 +17,7 @@ const Input = styled.input`
     height: 30px;
     border-radius: 8px;
     border: 2px solid #000;
-`;
+`; 
 
 const ContentInput = styled.div`
     width: 100%;

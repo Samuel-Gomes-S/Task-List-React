@@ -11,7 +11,7 @@ export function FilterTask() {
     function handleFilterBtn(value) {
         setFilterValue(value)
         return filterValue
-    }
+    } 
 
     return (
         <ContainerFilter> {/*Container conteudo do filtro*/}

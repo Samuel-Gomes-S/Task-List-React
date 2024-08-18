@@ -14,7 +14,7 @@ const FilterButton = styled.button`
     background-color: ${({ active }) => (active ? "#33bd" : "#d6dad5")};
     color: ${({ active }) => (active ? "#fff" : "#000")};
     border: none;
-    width: 100px;
+    width: 100px; 
     height: 25px;
     border-radius: 8px;
     &:hover {

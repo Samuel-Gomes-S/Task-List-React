@@ -12,7 +12,7 @@ export default function Tasklist() {
         if (filterValue === 'Todas') return true;
         if (filterValue === 'Concluidas') return task.isCompleted;
         if (filterValue === 'Pendentes') return !task.isCompleted;
-        return true;
+        return true; 
     });
 
     return filteredTasks.map((task) => (
